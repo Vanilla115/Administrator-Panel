@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // Имя файла JSON для чтения
-const fileName = 'Test.json';
+const fileName = 'Administrator-Panel/Test.json';
 
 // Чтение файла JSON
 fs.readFile(fileName, 'utf8', (err, data) => {
