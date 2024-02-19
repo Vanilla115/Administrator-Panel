@@ -3,7 +3,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
       var myChart = new Chart(ctx, {
           type: 'line',
           data: {
-            labels: LabelMass,
+            labels:  ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
             datasets: [{ 
                 data: [86,114,106,106,107,111,133],
                 label: "Total",
@@ -28,7 +28,50 @@ var ctx = document.getElementById('myChart').getContext('2d');
                 borderColor: "#c45850",
                 backgroundColor:"#d78f89",
                 fill: false,
+              },
+              { 
+                data: [6,3,2,2,7,2,22],
+                label: "Rejected",
+                borderColor: "#c45850",
+                backgroundColor:"#d78f89",
+                fill: false,
+              },
+              { 
+                data: [6,3,2,2,7,3,33],
+                label: "Rejected",
+                borderColor: "#c45850",
+                backgroundColor:"#d78f89",
+                fill: false,
+              },
+              { 
+                data: [6,3,2,2,7,4,44],
+                label: "Rejected",
+                borderColor: "#c45850",
+                backgroundColor:"#d78f89",
+                fill: false,
+              },
+              { 
+                data: [6,3,2,2,7,2,24],
+                label: "Rejected",
+                borderColor: "#c45850",
+                backgroundColor:"#d78f89",
+                fill: false,
+              },
+              { 
+                data: [6,3,2,2,7,3,45],
+                label: "Rejected",
+                borderColor: "#c45850",
+                backgroundColor:"#d78f89",
+                fill: false,
+              },
+              { 
+                data: [6,3,2,2,7,6,36],
+                label: "Rejected",
+                borderColor: "#c45850",
+                backgroundColor:"#d78f89",
+                fill: false,
               }
+
         ]
     },
      options: {

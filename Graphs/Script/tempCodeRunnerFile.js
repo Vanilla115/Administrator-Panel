@@ -18,7 +18,7 @@ fs.readFile(fileName, 'utf8', (err, data) => {
         console.log('Данные из файла JSON:');
         console.log(jsonData);
 
-        // Пример структуры данных 
+        // Пример структуры данных (можно модифицировать в зависимости от структуры вашего JSON)
         class MyStructure {
             constructor(labels, objects) {
                 this.labels = labels;
@@ -27,13 +27,14 @@ fs.readFile(fileName, 'utf8', (err, data) => {
         }
 
         // Создание экземпляра структуры с прочитанными данными
-        const myDataStructure = new MyStructure(jsonData.labels, jsonData.dataSet);
-        const parametersCount = myDataStructure.objects.length;
+        const myDataStructure = new MyStructure(jsonData.labels, jsonData);
 
-        console.log('Количество параметров в структуре данных: ', parametersCount);
+        // Вывод данных структуры для проверки успешной записи
+        //console.log('\nСтруктура данных:');
+        //console.log('Labels:', myDataStructure.labels);
+        //console.log('Objects:', myDataStructure.objects);
 
     } catch (error) {
         console.error('Ошибка при обработке данных JSON:', error);
     }
 });
-
