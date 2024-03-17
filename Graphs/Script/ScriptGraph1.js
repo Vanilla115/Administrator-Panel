@@ -1,77 +1,29 @@
-
+const Data = require('readingFile.js')
+//import {myDataStructure, parametersCount} from 'readingFile.js';
 var ctx = document.getElementById('myChart').getContext('2d');
       var myChart = new Chart(ctx, {
           type: 'line',
           data: {
-            labels:  ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            labels:  myDataStructure.labels,
             datasets: [{ 
-                data: [86,114,106,106,107,111,133],
-                label: "Total",
+                data: myDataStructure.objects[0].massData,
+                label: myDataStructure.objects[0].label,
                 borderColor: "#3e95cd",
                 backgroundColor: "#7bb6dd",
                 fill: false,
               }, { 
-                data: [70,90,44,60,83,90,66],
-                label: "Accepted",
+                data: myDataStructure.objects[1].massData,
+                label: myDataStructure.objects[1].label,
                 borderColor: "#3cba9f",
                 backgroundColor: "#71d1bd",
                 fill: false,
               }, { 
-                data: [10,21,60,44,17,21,17],
-                label: "Pending",
+                data: myDataStructure.objects[2].massData,
+                label: myDataStructure.objects[2].label,
                 borderColor: "#ffa500",
                 backgroundColor:"#ffc04d",
                 fill: false,
-              }, { 
-                data: [6,3,2,2,7,0,16],
-                label: "Rejected",
-                borderColor: "#c45850",
-                backgroundColor:"#d78f89",
-                fill: false,
-              },
-              { 
-                data: [6,3,2,2,7,2,22],
-                label: "Rejected",
-                borderColor: "#c45850",
-                backgroundColor:"#d78f89",
-                fill: false,
-              },
-              { 
-                data: [6,3,2,2,7,3,33],
-                label: "Rejected",
-                borderColor: "#c45850",
-                backgroundColor:"#d78f89",
-                fill: false,
-              },
-              { 
-                data: [6,3,2,2,7,4,44],
-                label: "Rejected",
-                borderColor: "#c45850",
-                backgroundColor:"#d78f89",
-                fill: false,
-              },
-              { 
-                data: [6,3,2,2,7,2,24],
-                label: "Rejected",
-                borderColor: "#c45850",
-                backgroundColor:"#d78f89",
-                fill: false,
-              },
-              { 
-                data: [6,3,2,2,7,3,45],
-                label: "Rejected",
-                borderColor: "#c45850",
-                backgroundColor:"#d78f89",
-                fill: false,
-              },
-              { 
-                data: [6,3,2,2,7,6,36],
-                label: "Rejected",
-                borderColor: "#c45850",
-                backgroundColor:"#d78f89",
-                fill: false,
               }
-
         ]
     },
      options: {
@@ -86,3 +38,6 @@ var ctx = document.getElementById('myChart').getContext('2d');
         }
     }
  });
+
+
+ 

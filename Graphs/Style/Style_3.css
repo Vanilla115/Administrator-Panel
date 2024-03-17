@@ -2,22 +2,21 @@ body {
     /*background-image: url('https://top-fon.com/uploads/posts/2023-01/1674780153_top-fon-com-p-chernii-krasivii-fon-dlya-prezentatsii-172.jpg');*/
     /*background-image: url(blackbg.png);*/
     background-color: DimGrey;
-    height: 300px; 
 }
 .chart-container {
     background-color: white;
-    height: 700px; 
-    width: 1350px;
+    height: 450px;
+    width: 450px;
     text-align: center;
     position: absolute;
     top: 50%;
-    left: 56%;
+    left: 55%;
     transform: translate(-50%, -50%);
 }
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 183px; /* Set the width of the sidebar */
+    width: 180px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
