@@ -6,12 +6,12 @@ body {
 }
 .chart-container {
     background-color: white;
-    height: 800px; 
-    width: 1150px;
+    height: 700px; 
+    width: 1350px;
     text-align: center;
     position: absolute;
     top: 50%;
-    left: 65%;
+    left: 56%;
     transform: translate(-50%, -50%);
 }
 /* The sidebar menu */

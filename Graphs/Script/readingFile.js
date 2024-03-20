@@ -1,37 +1,11 @@
-const fs = require('fs');
-
-// Имя файла JSON для чтения
-const fileName = './Test.json';
-
-// Чтение файла JSON
-fs.readFile(fileName, 'utf8', (err, data) => {
-    if (err) {
-        console.error('Ошибка при чтении файла:', err);
-        return;
-    }
-    
+export async function fetchData() {
     try {
-        // Преобразование данных из JSON в объект
-        const jsonData = JSON.parse(data);
-
-        // Вывод данных для проверки успешного чтения
-        //console.log('Данные из файла JSON:');
-        //console.log(jsonData);
-        
-        // Пример структуры данных 
-        class MyStructure {
-            constructor(labels, objects) {
-                this.labels = labels;
-                this.objects = objects;
-            }
+        const response = await fetch("http://localhost:4444/api/users");
+        if (!response.ok) {
+            throw new Error('Ошибка HTTP: ' + response.status);
         }
-
-        // Создание экземпляра структуры с прочитанными данными
-        const myDataStructure = new MyStructure(jsonData.labels, jsonData.dataSet);
-        const parametersCount = myDataStructure.objects.length;
-        module.exports = myDataStructure;
+        return await response.json();
     } catch (error) {
-        console.error('Ошибка при обработке данных JSON:', error);
-    }   
-});
-
+        console.error('Ошибка при получении данных:', error);
+    }
+}
