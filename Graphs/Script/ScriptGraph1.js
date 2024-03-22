@@ -1,4 +1,4 @@
-import { fetchData } from "./readingFile.js"
+import { fetchData } from "./ParseServer.js"
 
 const parseData = async () => {
   const response = await fetchData()

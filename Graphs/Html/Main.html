@@ -7,13 +7,44 @@
     <link rel="stylesheet" href="../Style/StyleMain.css">
 </head>
 <body>
+  <script type = "module" src="../Script/RestAPI.js"></script>
   <div class = "main-div">
     <img id = "img1" src="/IMG/vector-isolated-illustration-of-achievement-or-financial-success-graph_574777-135.avif" alt="">
     <div class = "text_1">
-    <div><h1>Добро пожаловать!</h1><h3>Данные с сервера успешно загружены можете перейти к просмотру статистики. <br><br> Для выбора наиболее удобного варианта отображения воспользуйтесь боковой панелью.</h3></div>
+    <div><h1>Добро пожаловать в MyAnalytics!</h1><h3>Данные с сервера успешно загружены можете перейти к просмотру статистики. <br><br> Для выбора наиболее удобного варианта отображения воспользуйтесь боковой панелью.</h3></div>
     </div>
   </div>
-
+  <div class = "text_2"><h2>Официальный курс и динамика белорусского рубля относительно иностранной валюты.</h2><h2 id = "bank"> (согласно Национальному банку Республики Беларусь)</h2></div>
+  <div class = "currencies">
+    <div class = "values">
+      <div class = "textValues"> 
+        <div>USD: 1 </div>
+        <br>
+        <div id = "parameterValue1"></div>
+      </div>
+    </div>
+    <div class = "values">
+      <div class = "textValues"> 
+        <div>EUR: 1 </div>
+        <br>
+        <div id = "parameterValue2"></div>
+      </div>
+    </div>
+    <div class = "values">
+      <div class = "textValues"> 
+        <div>RUB: 100 </div>
+        <br>
+        <div id = "parameterValue3"></div>
+      </div>
+    </div>
+    <div class = "values">
+      <div class = "textValues"> 
+        <div>PLN: 10 </div>
+        <br>
+        <div id = "parameterValue4"></div>
+      </div>
+    </div>
+  </div>
   <div class="sidenav">
     <a id = "Menu" href="#">Способ отображения:</a>
     <hr>
@@ -24,7 +55,6 @@
     
     <a href="Radar.html">Радарная диаграмма</a>
     <a href="Polar.html">Полярная диаграмма</a>
-  </div>
   </div>
 </body>
 </html>

@@ -1,5 +1,6 @@
 body {
     background-color: #000000;
+    color:white;
 }
 #img1{
     width: 600px;
@@ -7,9 +8,11 @@ body {
     float: left;
     margin-top: 0px;
 }
+#bank{
+    text-align: center;
+}
 .main-div{
     margin-left: 200px;
-    color: white;
     display: flex;
 }
 .text_1{
@@ -19,9 +22,33 @@ body {
     margin-top: 120px;
     padding-left: 5px;
     font-family: 'Times New Roman', Times, serif;
-    color:white;
     background-color: #111;
     border-radius: 20px;
+}
+.text_2{
+    margin-left: 320px;
+    background-color: #111;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 1000px;
+    margin-bottom: 50px;
+}
+.currencies{
+    display: flex;
+    margin-left: 320px;
+    width: 1050px;
+    gap: 27px;
+}
+.values{
+    text-align: center;
+    border-radius: 20px;
+    background-color: #111;
+    padding: 50px;
+}
+.textValues{
+    text-align: center;
+    font-size: 25px;
 }
 .sidenav {
     height: 100%; 
