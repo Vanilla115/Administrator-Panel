@@ -17,10 +17,6 @@ function fetchData(apiUrl) {
   const apiUrl = 'https://api.nbrb.by/exrates/rates?periodicity=0';
   fetchData(apiUrl)
     .then(data => {
-      // Обработка полученных данных
-      //const parameterValue1 = data.Cur_OfficialRate
-      //document.getElementById('parameterValue1').textContent = "BYN: " + parameterValue1;
-      //console.log(parameterValue1)
       const curData = (data.filter(obj => ['USD', 'EUR', 'RUB', 'PLN'].includes(obj.Cur_Abbreviation)));
       document.getElementById('parameterValue1').textContent = "BYN: " + curData[0].Cur_OfficialRate;
       document.getElementById('parameterValue2').textContent = "BYN: " + curData[1].Cur_OfficialRate;

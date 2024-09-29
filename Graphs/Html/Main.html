@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="../Style/StyleMain.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
     <div><h1>Добро пожаловать в MyAnalytics!</h1><h3>Данные с сервера успешно загружены можете перейти к просмотру статистики. <br><br> Для выбора наиболее удобного варианта отображения воспользуйтесь боковой панелью.</h3></div>
     </div>
   </div>
-  <div class = "text_2"><h2>Официальный курс и динамика белорусского рубля относительно иностранной валюты.</h2><h2 id = "bank"> (согласно Национальному банку Республики Беларусь)</h2></div>
+  <div class = "text_2"><h2>Официальный курс белорусского рубля относительно иностранной валюты.</h2><h2 id = "bank"> (согласно Национальному банку Республики Беларусь)</h2></div>
   <div class = "currencies">
     <div class = "values">
       <div class = "textValues"> 
@@ -32,26 +33,32 @@
     </div>
     <div class = "values">
       <div class = "textValues"> 
-        <div>RUB: 100 </div>
+        <div>RUB: 100,0 </div>
         <br>
         <div id = "parameterValue3"></div>
       </div>
     </div>
     <div class = "values">
       <div class = "textValues"> 
-        <div>PLN: 10 </div>
+        <div>PLN: 10,0 </div>
         <br>
         <div id = "parameterValue4"></div>
       </div>
     </div>
   </div>
+
+  <div class="chart-container">
+    <canvas id="myChart"></canvas>
+    <script type = "module" src="../Script/usdScript.js"></script>
+  </div>
+
   <div class="sidenav">
     <a id = "Menu" href="#">Способ отображения:</a>
     <hr>
-    <a href="Line.html">Линейная диаграмма</a>
+    <a href="Line.html">Линейный график</a>
     <a href="Histogram.html">Гистограмма</a>
     <hr>
-    <a href="#">Экспансивные диаграммы:</a>
+    <a href="#" id = "Menu">Экспансивные диаграммы:</a>
     
     <a href="Radar.html">Радарная диаграмма</a>
     <a href="Polar.html">Полярная диаграмма</a>

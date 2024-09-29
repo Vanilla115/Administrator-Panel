@@ -38,7 +38,7 @@ body {
     display: flex;
     margin-left: 320px;
     width: 1050px;
-    gap: 27px;
+    gap: 30px;
 }
 .values{
     text-align: center;
@@ -52,7 +52,7 @@ body {
 }
 .sidenav {
     height: 100%; 
-    width: 183px; 
+    width: 210px; 
     position: fixed; 
     z-index: 1; 
     top: 0; 
@@ -60,14 +60,6 @@ body {
     background-color: #111; 
     overflow-x: hidden; 
     padding-top: 20px;
-}
-
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
 }
 
 .sidenav a {
@@ -96,4 +88,14 @@ body {
 
 #Menu{
     color: white;
+}
+
+.chart-container{
+    padding: 15px;
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    margin-left: 500px;
+    margin-top: 45px;
 }
